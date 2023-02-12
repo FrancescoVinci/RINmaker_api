@@ -31,8 +31,8 @@ app.use(bodyParser.urlencoded({
 app.use('/api', apiRoute);
 
 var credentials = {
-	key: fs.readFileSync('/etc/letsencrypt/live/ring.dais.unive.it/privkey.pem','utf8'),
-	cert: fs.readFileSync('/etc/letsencrypt/live/ring.dais.unive.it/fullchain.pem','utf8')
+	key: fs.readFileSync('###'),
+	cert: fs.readFileSync('###')
 };
 
 //app.listen(8002, () => console.log(`Hello world app listening on port 8002!`))
