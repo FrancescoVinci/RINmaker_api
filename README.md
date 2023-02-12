@@ -2,7 +2,7 @@
 
 A Rest API for **RINmaker**.\
 RINmaker is a software developed by Ca'Foscari University.\
-The *RINmakerRestAPI* is organized around [REST](https://en.wikipedia.org/wiki/Representational_state_transfer). The API has predictable URLs, accepts *form-encoded* and *JSON-encoded* request bodies, returns JSON-encoded responses, and uses standard HTTP response codes and verbs.\
+The *RINmakerRestAPI* is organized around [REST](https://en.wikipedia.org/wiki/Representational_state_transfer). The API has predictable URLs, accepts *form-encoded* and *JSON-encoded* request bodies, returns JSON-encoded responses, and uses standard HTTP response codes and verbs.
 
 ## Endpoints
 You can use the web service at:
