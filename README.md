@@ -17,7 +17,9 @@ https://rinmaker.dais.unive.it:8002/api/{endpoints}
   | POST | '*pdbname*', *isRin*, *isCmap* | Returns the xml content of the processed file |
   
   `pdbname`: pdb or mmCif file name
+  
   `isRin`: boolean
+  
   `isCmap`: boolean
 
   Response:
