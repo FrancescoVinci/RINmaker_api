@@ -32,7 +32,7 @@ https://rinmaker.dais.unive.it:8002/api/{endpoints}
   | 🟡 500 | Internal error |
 
   Other *non-mandatory* parameters:
-  ```JavaScript
+  ```
   {
       no_hydrogen: boolean,
       keep_water: boolean,
@@ -49,7 +49,7 @@ https://rinmaker.dais.unive.it:8002/api/{endpoints}
       pipistack_normal_normal: FLOAT:POSITIVE=30,
       pipistack_normal_centre: FLOAT:POSITIVE=60,
       type: ENUM:{ca,cb}=ca,
-      distance:	FLOAT:POSITIVE=6
+      distance: FLOAT:POSITIVE=6,
   }
   ```
 
