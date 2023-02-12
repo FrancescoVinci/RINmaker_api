@@ -3,7 +3,7 @@ const lockFile = require('lockfile');
 const constants = require('./constants');
 var execFileSync = require("child_process").execFileSync;
 var spawnSync = require("child_process").spawnSync;
-const { param } = require('../routes/api');
+//const { param } = require('../routes/api');
 const crypto = require("crypto");
 
 

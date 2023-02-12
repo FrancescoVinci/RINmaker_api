@@ -8,7 +8,7 @@ const apiRoute = require('./routes/api');
 const cors = require('cors');
 
 app.use(function (req, res, next){
-	res.setHeader('Access-Control-Allow-Origin', 'https://www.dsi.unive.it'); 
+	res.setHeader('Access-Control-Allow-Origin', 'https://www.rinmaker.dais.unive.it'); 
 	res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
 	res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
 	res.setHeader('Access-Control-Allow-Credentials', true);
@@ -30,11 +30,11 @@ app.use(bodyParser.urlencoded({
 
 app.use('/api', apiRoute);
 
-/*var credentials = {
+var credentials = {
 	key: fs.readFileSync('/etc/letsencrypt/live/ring.dais.unive.it/privkey.pem','utf8'),
 	cert: fs.readFileSync('/etc/letsencrypt/live/ring.dais.unive.it/fullchain.pem','utf8')
-};*/
+};
 
-app.listen(8002, () => console.log(`Hello world app listening on port 8002!`))
+//app.listen(8002, () => console.log(`Hello world app listening on port 8002!`))
 
-//https.createServer(/*credentials, */app).listen(8002);
+https.createServer(credentials, app).listen(8002);
