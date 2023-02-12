@@ -90,8 +90,7 @@ https://rinmaker.dais.unive.it:8002/api/{endpoints}
   ```
   
 ## Usage
-Some examples of use:
-### Post request
+
   
  - `https://rinmaker.dais.unive.it:8002/api/requestxml/fromname`
  
