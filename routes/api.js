@@ -80,7 +80,7 @@ router.post('/requestxml/fromname', async (req, res) => {
 
                 let data = '';
 
-                if (r.statusCode == 404) {
+                if (r.statusCode === 404) {
                     console.log('\tFile does not exist in rcbs.org');
                     res.status(404).json({
                         response: "Not found",
@@ -90,7 +90,7 @@ router.post('/requestxml/fromname', async (req, res) => {
                         }
                     });
                     console.log('End');
-                } else if (res.statusCode == 200) {
+                } else if (res.statusCode === 200) {
                     console.log('\tGetting file from rcbs.org');
                     r.setEncoding('utf8');
                     r.on('data', chunk => {
